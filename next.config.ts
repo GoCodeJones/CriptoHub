@@ -1,12 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  compress: true,
-  swcMinify: true,
-  poweredByHeader: false,
-  experimental: {
-    optimizePackageImports: ["lucide-react"],
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  reactCompiler: true,
 };
 
-module.exports = nextConfig;
+export default nextConfig;
