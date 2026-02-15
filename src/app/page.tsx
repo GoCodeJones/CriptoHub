@@ -6,20 +6,30 @@ export default function Home() {
     <main className="min-h-screen bg-black text-zinc-200">
 
       {/* HERO */}
-      <section className="border-b border-yellow-700 px-8 py-24 text-center">
-        <h1 className="text-6xl font-serif font-bold text-yellow-500 tracking-wide">
+      <section className="border-b border-yellow-700 px-8 py-28 text-center">
+        <h1 className="text-6xl font-bold text-yellow-500 tracking-tight">
           CriptoHub
         </h1>
+
         <p className="mt-6 max-w-2xl mx-auto text-lg text-zinc-400 leading-relaxed">
           An open-source educational platform dedicated to Bitcoin,
           Blockchain, and the philosophy of decentralization.
           A structured hub for knowledge, critical thinking, and technical sovereignty.
         </p>
+
+        <div className="mt-10">
+          <Link
+            href="/materials"
+            className="bg-yellow-600 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded transition"
+          >
+            Start Learning
+          </Link>
+        </div>
       </section>
 
       {/* ABOUT PROJECT */}
       <section className="px-8 py-20 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-serif font-semibold text-yellow-500 mb-6">
+        <h2 className="text-3xl font-bold text-yellow-500 mb-6">
           About the Project
         </h2>
 
@@ -41,7 +51,7 @@ export default function Home() {
       {/* AUTHOR */}
       <section className="border-t border-yellow-700 px-8 py-20 bg-black">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
-          
+
           <div className="w-48 h-48 relative">
             <Image
               src="/jones.jpg"
@@ -52,7 +62,7 @@ export default function Home() {
           </div>
 
           <div className="flex-1">
-            <h2 className="text-3xl font-serif font-semibold text-yellow-500 mb-4">
+            <h2 className="text-3xl font-bold text-yellow-500 mb-4">
               About the Author
             </h2>
 
@@ -62,28 +72,14 @@ export default function Home() {
               infrastructure and decentralized systems.
             </p>
 
-            <div className="flex gap-6 text-sm font-semibold mb-6">
-              <Link
-                href="https://substack.com/@jhonatangeronimo"
-                target="_blank"
-                className="hover:text-yellow-500"
-              >
+            <div className="flex gap-6 text-sm font-medium mb-6">
+              <Link href="https://substack.com/@jhonatangeronimo" target="_blank" className="hover:text-yellow-500">
                 Substack
               </Link>
-
-              <Link
-                href="https://github.com/GoCodeJones"
-                target="_blank"
-                className="hover:text-yellow-500"
-              >
+              <Link href="https://github.com/GoCodeJones" target="_blank" className="hover:text-yellow-500">
                 GitHub
               </Link>
-
-              <Link
-                href="https://www.linkedin.com/in/devjhonataneduardo/"
-                target="_blank"
-                className="hover:text-yellow-500"
-              >
+              <Link href="https://www.linkedin.com/in/devjhonataneduardo/" target="_blank" className="hover:text-yellow-500">
                 LinkedIn
               </Link>
             </div>
