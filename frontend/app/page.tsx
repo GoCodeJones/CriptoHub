@@ -1,65 +1,66 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="text-center mb-20">
+        <h1 className="text-6xl font-bold text-yellow-400 mb-6">
+          CriptoHub
+        </h1>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+          Plataforma educacional descentralizada sobre Bitcoin, blockchain e criptomoedas. 
+          Conteúdo essencial, documentação completa e colaboração aberta para quem busca 
+          liberdade financeira e conhecimento sobre o futuro do dinheiro.
+        </p>
+        <Link
+          href="/essenciais"
+          className="inline-block bg-yellow-400 text-black font-bold px-8 py-4 rounded hover:bg-yellow-300 transition-colors text-lg"
+        >
+          Começar Aprendizado
+        </Link>
+      </section>
+
+      <section className="mb-20">
+        <h2 className="text-4xl font-bold text-yellow-400 mb-8 text-center">
+          O que é o CriptoHub?
+        </h2>
+        <div className="bg-gray-900 border-2 border-yellow-400 rounded-lg p-8 max-w-4xl mx-auto">
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+            O CriptoHub é uma iniciativa de educação livre e descentralizada sobre criptomoedas. 
+            Aqui você encontra conteúdo curado, documentação técnica e recursos essenciais para 
+            entender o ecossistema cripto de forma profunda.
+          </p>
+          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+            Acreditamos na soberania individual, na descentralização do conhecimento e no poder 
+            transformador das tecnologias blockchain. Este é um espaço livre de censura, 
+            construído pela comunidade e para a comunidade.
+          </p>
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Todo o conteúdo é open-source e você pode contribuir através do GitHub. 
+            Juntos, construímos uma base de conhecimento sólida e acessível para todos.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="mb-20">
+        <h2 className="text-4xl font-bold text-yellow-400 mb-8 text-center">
+          Sobre o Autor
+        </h2>
+        <div className="flex flex-col items-center">
+          <div className="w-48 h-48 rounded-full bg-gray-800 border-4 border-yellow-400 mb-6 overflow-hidden">
+            <img src="PLACEHOLDER_AUTHOR_IMAGE" alt="Foto do Autor" className="w-full h-full object-cover" />
+          </div>
+          <h3 className="text-2xl font-bold text-yellow-400 mb-4">PLACEHOLDER_AUTHOR_NAME</h3>
+          <p className="text-gray-300 text-center max-w-2xl mb-6 leading-relaxed">PLACEHOLDER_AUTHOR_DESCRIPTION</p>
+          
+          <div className="flex space-x-6">
+            <a href="PLACEHOLDER_TWITTER_URL" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">Twitter</a>
+            <a href="PLACEHOLDER_GITHUB_URL" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">GitHub</a>
+            <a href="PLACEHOLDER_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">LinkedIn</a>
+            <a href="PLACEHOLDER_YOUTUBE_URL" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">YouTube</a>
+          </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
